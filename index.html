@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Weather</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-side">
+                <input
+                    class="search-bar"
+                    type="text"
+                    placeholder="Search here..."
+                />
+                <input
+                    type="image"
+                    src="assets/search.png"
+                    class="search-icon"
+                />
+            </div>
+            <div class="right-side">
+                <img class="bell" src="assets/bell.png" />
+                <img class="user" src="assets/user.png" />
+                <img class="profile-picture" src="assets/man.avif" />
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="current">
+                <p>Current Location</p>
+                <p class="current-location">Los Angeles, CA, USA</p>
+            </div>
+            <div class="weather-cards">
+                <div class="primary">
+                    <img class="city" src="assets/golden-bridge.jpg" />
+                    <div class="weather-status">
+                        <div class="img-text">
+                            <img class="weather-icon" src="assets/cloudy.png" />
+                            <p class="degree">16<span>&deg;</span></p>
+                        </div>
+                        <div class="date-status">
+                            <p class="date">Monday, 07:43 AM</p>
+                            <p class="status">Partly Cloudy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondary">
+                    <button class="plus-sign">+</button>
+                    <p>Add City</p>
+                </div>
+            </div>
+
+            <div class="second-section">
+                <p class="second-section-title">Today's Highlights</p>
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <p>Precipitation</p>
+                        <span class="precipitation">2%</span>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Humidity</p>
+                        <span class="humidity">87%</span>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Wind</p>
+                        <span class="wind">0 km/h</span>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Sunrise & Sunset</p>
+                        <div class="time-grid">
+                            <div class="sunrise">
+                                <img class="up" src="assets/up.svg" />
+                                <p class="sun">6:18 am</p>
+                            </div>
+                            <div class="sunset">
+                                <img class="down" src="assets/down.svg" />
+                                <p class="moon">7:27 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="future-container">
+                <div class="future-container-title">3 Days Forecast</p></div>
+                <div class="three-days-forecast">
+                    <div class="day">
+                        <div class="min-max">
+                            <img class="arrow-up" src="assets/max.svg">
+                            <p class="max">7<span>&deg;</span></p>
+                            <img class="arrow-down" src="assets/min.svg">
+                            <p class="min">2<span>&deg;</span></p>
+                        </div>
+                        <div class="day-name">
+                            <img class="icon" src="assets/cloudy.png" />
+                            <div class="day-and-state">
+                                <p class="day-number">Tuesday</p>
+                                <span class="day-state">Cloudy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day" id="reverse">
+                        <div class="min-max">
+                            <img class="arrow-up" src="assets/max.svg">
+                            <p class="max">19<span>&deg;</span></p>
+                            <img class="arrow-down" src="assets/min.svg">
+                            <p class="min">13<span>&deg;</span></p>
+                        </div>
+                        <div class="day-name">
+                            <img class="icon" src="assets/cloudy.png" />
+                            <div class="day-and-state">
+                                <p class="day-number">Wednesday</p>
+                                <span class="day-state">Rainy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="min-max">
+                            <img class="arrow-up" src="assets/max.svg">
+                            <p class="max">35<span>&deg;</span></p>
+                            <img class="arrow-down" src="assets/min.svg">
+                            <p class="min">22<span>&deg;</span></p>
+                        </div>
+                        <div class="day-name">
+                            <img class="icon" src="assets/cloudy.png" />
+                            <div class="day-and-state">
+                                <p class="day-number">Thursday</p>
+                                <span class="day-state">Snowfall</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
